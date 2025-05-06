@@ -32,17 +32,17 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-white pt-12 pb-6">
+        <footer className="bg-[#310911] pt-12 pb-6 text-white">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                     {/* Company Info */}
                     <div className="lg:col-span-2">
                         <div className="mb-4">
-                            <h2 className="text-2xl font-bold text-[#AD0024]">
+                            <h2 className="text-2xl font-bold text-white">
                                 EnglishPro
                             </h2>
                         </div>
-                        <p className="text-gray-600 mb-6 max-w-md">
+                        <p className="text-gray-100 mb-6 max-w-md">
                             Your journey to English fluency starts here. Connect
                             with expert tutors and achieve your language goals
                             faster and more effectively.
@@ -50,7 +50,7 @@ const Footer = () => {
                         <div className="flex space-x-4">
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-[#AD0024]"
+                                className="text-gray-200 hover:text-white"
                             >
                                 <span className="sr-only">Facebook</span>
                                 <svg
@@ -63,7 +63,7 @@ const Footer = () => {
                             </a>
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-[#AD0024]"
+                                className="text-gray-200 hover:text-white"
                             >
                                 <span className="sr-only">Twitter</span>
                                 <svg
@@ -76,7 +76,7 @@ const Footer = () => {
                             </a>
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-[#AD0024]"
+                                className="text-gray-200 hover:text-white"
                             >
                                 <span className="sr-only">Instagram</span>
                                 <svg
@@ -89,7 +89,7 @@ const Footer = () => {
                             </a>
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-[#AD0024]"
+                                className="text-gray-200 hover:text-white"
                             >
                                 <span className="sr-only">YouTube</span>
                                 <svg
@@ -106,7 +106,7 @@ const Footer = () => {
                     {/* Quick Links */}
                     {Object.entries(footerLinks).map(([category, links]) => (
                         <div key={category}>
-                            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
                                 {category}
                             </h3>
                             <ul className="space-y-2">
@@ -114,7 +114,7 @@ const Footer = () => {
                                     <li key={link.name}>
                                         <a
                                             href={link.link}
-                                            className="text-gray-600 hover:text-[#AD0024] transition duration-300"
+                                            className="text-gray-200 hover:text-white transition duration-300"
                                         >
                                             {link.name}
                                         </a>
@@ -126,18 +126,28 @@ const Footer = () => {
                 </div>
 
                 {/* Language Selector & Bottom */}
-                <div className="mt-12 pt-8 border-t border-gray-200">
+                <div className="mt-12 pt-8 border-t border-gray-100">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <div className="mb-4 md:mb-0">
                             <div className="relative">
-                                <select className="appearance-none bg-transparent border border-gray-300 text-gray-700 py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-[#AD0024]">
-                                    <option>English</option>
-                                    <option>Español</option>
-                                    <option>Français</option>
-                                    <option>Deutsch</option>
-                                    <option>日本語</option>
+                                <select className="appearance-none bg-transparent border border-gray-200 text-white py-2 px-4 pr-8 rounded leading-tight focus:outline-none focus:border-white focus:ring-1 focus:ring-white">
+                                    <option className="bg-[#AD0024] text-white">
+                                        English
+                                    </option>
+                                    <option className="bg-[#AD0024] text-white">
+                                        Español
+                                    </option>
+                                    <option className="bg-[#AD0024] text-white">
+                                        Français
+                                    </option>
+                                    <option className="bg-[#AD0024] text-white">
+                                        Deutsch
+                                    </option>
+                                    <option className="bg-[#AD0024] text-white">
+                                        日本語
+                                    </option>
                                 </select>
-                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
                                     <svg
                                         className="fill-current h-4 w-4"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +158,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <p className="text-gray-500 text-sm">
+                        <p className="text-gray-200 text-sm">
                             &copy; {currentYear} EnglishPro. All rights
                             reserved.
                         </p>
