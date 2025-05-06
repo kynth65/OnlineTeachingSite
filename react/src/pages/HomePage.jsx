@@ -13,7 +13,7 @@ export default function HomePage() {
         <div className="bg-[#F2F3FB] min-h-screen">
             <Navbar />
             <HeroSection />
-            <FeaturesSection />
+            {/* <FeaturesSection /> */}
             <HowItWorks />
             <TestimonialsSection />
             <TutorShowcase />
