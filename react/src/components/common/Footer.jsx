@@ -34,9 +34,6 @@ const Footer = () => {
         },
     ];
 
-    // Simplified categories for the preview
-    const categories = ["For Students", "For Tutors", "Company", "Legal"];
-
     return (
         <footer className="bg-gradient-to-br from-[#1A0008] to-[#330010] text-white pt-16 pb-8">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
@@ -101,33 +98,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Links Grid - Simplified for preview */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
-                    {categories.map((category) => (
-                        <div key={category}>
-                            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-6 relative inline-block">
-                                {category}
-                                <div className="absolute -bottom-2 left-0 h-0.5 w-12 bg-[#AD0024]"></div>
-                            </h3>
-                            <ul className="space-y-3">
-                                {[1, 2, 3, 4].map((item) => (
-                                    <li key={item}>
-                                        <a
-                                            href="#"
-                                            className="text-gray-300 hover:text-white transition duration-300 flex items-center group"
-                                        >
-                                            <span className="w-1 h-1 rounded-full bg-gray-600 mr-2 transition-all duration-300 group-hover:bg-[#AD0024] group-hover:w-2"></span>
-                                            Link {item}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </div>
-
                 {/* Bottom Bar */}
-                <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <div className="pt-8 border-gray-800 flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-6 md:mb-0">
                         <div className="relative inline-block">
                             <select className="appearance-none bg-gray-800 border border-gray-700 text-gray-300 py-2 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:ring-2 focus:ring-[#AD0024] focus:border-transparent">
