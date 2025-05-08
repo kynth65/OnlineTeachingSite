@@ -12,19 +12,19 @@ export default function Pricing() {
                 <div className="pt-28 pb-16 md:pb-20 relative overflow-hidden">
                     {/* Background decorative elements */}
                     <div className="absolute -z-10 rounded-full bg-[#AD0024] opacity-5 w-64 h-64 -top-20 -left-20"></div>
-                    <div className="absolute -z-10 rounded-full bg-[#D7C15B] opacity-5 w-80 h-80 -bottom-40 -right-20"></div>
 
-                    <div className="container mx-auto px-4 md:px-6 lg:px-8">
-                        <div className=" flex justify-between w-full text-center">
-                            <h1 className="inline-block text-6xl text-[#AD0024] font-medium rounded-full mb-6">
-                                PRICING PLANS
+                    <div className="container mx-auto px-5 md:px-6 lg:px-40">
+                        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8 md:gap-16">
+                            <h1 className="text-6xl md:text-6xl lg:text-7xl text-[#AD0024] md:max-w-sm">
+                                Pricing
                             </h1>
-                            <h2 className="w-40">
-                                Select a tutoring package tailored to your
-                                learning goals. Transparent pricing with no
-                                hidden fees and a free consultation to get you
-                                started.
-                            </h2>
+                            <div className="md:max-w-sm">
+                                <p className="text-base md:text-lg text-gray-700 leading-relaxed text-left">
+                                    Select a tailored coaching package to
+                                    support your goals. Transparent pricing and
+                                    a free consultation to get started!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
