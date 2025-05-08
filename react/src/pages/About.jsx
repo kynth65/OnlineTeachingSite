@@ -40,42 +40,6 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Our Mission */}
-                <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24">
-                    <div className="max-w-6xl mx-auto">
-                        <div className="grid md:grid-cols-2 gap-12 items-center">
-                            <div className="relative">
-                                <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                                    Our Mission
-                                </h2>
-                                <p className="text-lg text-gray-700 mb-6">
-                                    At EnglishPro, we believe that language
-                                    should never be a barrier to success. Our
-                                    mission is to empower individuals worldwide
-                                    with the English language skills they need
-                                    to achieve their personal and professional
-                                    goals.
-                                </p>
-                                <p className="text-lg text-gray-700">
-                                    Through our personalized approach, we create
-                                    learning experiences that are tailored to
-                                    each student's unique needs, learning style,
-                                    and objectives.
-                                </p>
-                                {/* Decorative element */}
-                                <div className="absolute -z-10 rounded-full bg-[#D7C15B] opacity-10 w-32 h-32 -bottom-10 -left-10"></div>
-                            </div>
-                            <div className="rounded-2xl overflow-hidden shadow-xl group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                                <img
-                                    src="/api/placeholder/600/400"
-                                    alt="Students learning English"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 {/* Our Story */}
                 <div className="py-16 md:py-24 relative overflow-hidden">
                     {/* Background decorative element */}
@@ -234,13 +198,6 @@ export default function About() {
                                 ].map((member, index) => (
                                     <div key={index} className="group">
                                         <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-1">
-                                            <div className="h-64 bg-gray-200 overflow-hidden">
-                                                <img
-                                                    src="/api/placeholder/400/300"
-                                                    alt={`${member.name}, ${member.role}`}
-                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                />
-                                            </div>
                                             <div className="p-6">
                                                 <h3 className="text-xl font-semibold mb-1">
                                                     {member.name}

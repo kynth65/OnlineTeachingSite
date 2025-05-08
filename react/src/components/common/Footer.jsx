@@ -35,15 +35,22 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-gradient-to-br from-[#1A0008] to-[#330010] text-white pt-16 pb-8">
-            <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <footer className="bg-gradient-to-br from-[#1A0008] to-[#330010] text-white pt-16 pb-8 relative overflow-hidden">
+            {/* Giant SpeakFun Logo */}
+            <div className="absolute -bottom-10 md:bottom-0 left-0 w-full opacity-10 pointer-events-none select-none">
+                <h1 className="text-8xl md:text-9xl lg:text-[12rem] xl:text-[15rem] font-extrabold text-white tracking-tighter">
+                    SpeakFun
+                </h1>
+            </div>
+
+            <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
                 {/* Logo and Newsletter */}
                 <div className="flex flex-col lg:flex-row justify-between mb-16 pb-16 border-b border-gray-800">
                     <div className="mb-10 lg:mb-0 lg:w-1/3">
                         <div className="mb-6">
                             <div className="flex items-center">
                                 <h2 className="text-3xl font-bold text-white mr-2">
-                                    EnglishPro
+                                    SpeakFun
                                 </h2>
                                 <div className="w-2 h-2 rounded-full bg-[#AD0024]"></div>
                             </div>
@@ -122,8 +129,7 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
                         <p className="text-gray-400 text-sm">
-                            &copy; {currentYear} EnglishPro. All rights
-                            reserved.
+                            &copy; {currentYear} SpeakFun. All rights reserved.
                         </p>
                         <div className="flex space-x-4">
                             <a
