@@ -37,15 +37,15 @@ const Footer = () => {
     return (
         <footer className="bg-gradient-to-br from-[#1A0008] to-[#330010] text-white pt-16 pb-8 relative overflow-hidden">
             {/* Giant SpeakFun Logo */}
-            <div className="absolute -bottom-10 md:bottom-0 left-0 w-full opacity-10 pointer-events-none select-none">
-                <h1 className="text-8xl md:text-9xl lg:text-[12rem] xl:text-[15rem] font-extrabold text-white tracking-tighter">
+            <div className="absolute bottom-40 left-3 md:bottom-0 w-full opacity-10 pointer-events-none select-none">
+                <h1 className="text-9xl md:text-9xl lg:text-[12rem] xl:text-[15rem] font-extrabold text-white tracking-tighter">
                     SpeakFun
                 </h1>
             </div>
 
             <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
                 {/* Logo and Newsletter */}
-                <div className="flex flex-col lg:flex-row justify-between mb-16 pb-16 border-b border-gray-800">
+                <div className="flex flex-col lg:flex-row justify-between mb-16 pb-16 ">
                     <div className="mb-10 lg:mb-0 lg:w-1/3">
                         <div className="mb-6">
                             <div className="flex items-center">
@@ -107,26 +107,7 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="pt-8 border-gray-800 flex flex-col md:flex-row justify-between items-center">
-                    <div className="mb-6 md:mb-0">
-                        <div className="relative inline-block">
-                            <select className="appearance-none bg-gray-800 border border-gray-700 text-gray-300 py-2 px-4 pr-8 rounded-full leading-tight focus:outline-none focus:ring-2 focus:ring-[#AD0024] focus:border-transparent">
-                                <option className="bg-gray-800">English</option>
-                                <option className="bg-gray-800">Español</option>
-                                <option className="bg-gray-800">
-                                    Français
-                                </option>
-                            </select>
-                            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-300">
-                                <svg
-                                    className="fill-current h-4 w-4"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 20 20"
-                                >
-                                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="mb-6 md:mb-0"></div>
                     <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
                         <p className="text-gray-400 text-sm">
                             &copy; {currentYear} SpeakFun. All rights reserved.

@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
     };
 
     return (
-        <div className="py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden relative">
+        <div className="py-24 bg-neutral-50 overflow-hidden relative">
             {/* Decorative elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-24 -left-12 w-64 h-64 bg-[#D7C15B] opacity-5 rounded-full blur-3xl"></div>
